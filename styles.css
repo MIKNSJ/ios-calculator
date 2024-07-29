@@ -44,9 +44,48 @@ header {
     height: 50px;
 }
 
-#copyright {
+#calculator {
+    background-color: black;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    padding: 10px 5%;
+    margin: 0 5%;
+}
+
+#calc_output h1 {
+    color: white;
+    text-align: end;
+}
+
+#calc_keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.calc_key {
+    background-color: #242529;
+    color: white;
+}
+
+.action {
+    background-color: #AAAAAA;
+    color: black;
+}
+
+.operation {
+    background-color: #FC9501;
+    color: white;
+}
+
+#key_0 {
+    grid-column: 1 / 3;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 5%;
     gap: 5px;
@@ -59,14 +98,4 @@ header {
 
 #last_barrier {
     height: 50px;
-}
-
-@media screen and (min-width: 750px) {
-    #copyright {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5%;
-        gap: 5px;
-    }
 }
