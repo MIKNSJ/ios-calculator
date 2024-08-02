@@ -127,7 +127,7 @@ header {
     color: white;
     font-size: 50px;
     text-align: end;
-    padding: 0 6%;
+    overflow: hidden;
 }
 
 #calc_keypad {
@@ -215,7 +215,8 @@ header {
     }
 
     #calc_output h1 {
-        font-size: 15vw;
+        /* font-size: 15vw */
+        font-size: 10vw;
     }
     
     .operation {
@@ -284,7 +285,8 @@ header {
     }
     
     #calc_output h1 {
-        font-size: 8vw;
+        /* font-size: 8vw */
+        font-size: 6vw;
     }
 
     .operation {
@@ -391,6 +393,7 @@ header {
     }
     
     #calc_output h1 {
-        font-size: 75px;
+        /*font-size: 75px;*/
+        font-size: 50px;
     }
 }
