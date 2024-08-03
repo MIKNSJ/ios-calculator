@@ -25,7 +25,7 @@ function clickedButton(key) {
             num = "";
         }
 
-        num+=key.innerText;
+        num+=key.innerText.trim();
         output.innerText = num;
 
         if (enableAbsoluteZero) {
@@ -47,7 +47,7 @@ function clickedButton(key) {
 
     if (key.id == "key_decimal" && !enableDecimal) {
         enableDecimal = true;
-        num+=key.innerText;
+        num+=key.innerText.trim();
         output.innerText = num;
         key_clear.innerText = "C";
     }
